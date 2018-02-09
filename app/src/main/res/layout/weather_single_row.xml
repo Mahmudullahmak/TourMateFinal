@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+
+    android:id="@+id/card_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="9dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="9dp"
+    app:contentPadding="3dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/blurredbackground"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:textSize="15dp"
+                android:textColor="#181818"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/day"
+                android:textColor="#1a1818"
+                android:textSize="20dp"
+                android:textStyle="italic"
+
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/temp"
+                android:textColor="#fffefe"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="MinTemp : "
+                      android:textColor="#ffffff"
+                      android:textSize="14dp"/>
+
+                  <TextView
+                      android:layout_marginLeft="5dp"
+
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/minTemp"
+                      android:textColor="#ffffff"
+                      android:textSize="14dp"/>
+              </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="50dp"
+                       android:text="MaxTemp : "
+                       android:textColor="#ffffff"
+                       android:textSize="14dp"/>
+
+                   <TextView
+                       android:layout_marginLeft="5dp"
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/maxTemp"
+                       android:textColor="#ffffff"
+                       android:textSize="14dp"/>
+               </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Humidity : "
+                        android:textColor="#ffffff"
+
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sunRise"
+                        android:textColor="#ffffff"
+                        android:textStyle="italic"
+                        android:textSize="14dp"/>
+
+                </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_marginTop="5dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="45dp"
+                      android:text="Pressure : "
+                      android:textColor="#ffffff"
+                      android:textSize="14dp"/>
+
+                  <TextView
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="5dp"
+
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/sunSet"
+                      android:textColor="#ffffff"
+                      android:textStyle="italic"
+                      android:textSize="14dp"/>
+              </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
